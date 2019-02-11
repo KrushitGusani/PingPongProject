@@ -9,6 +9,7 @@ namespace PingPongProject.DAL
 {
     public class PlayerDBContext : DbContext
     {
+        //This is collection of Player entities from the Databse context
         public  DbSet<Player> Players { get; set; }
     }
 }

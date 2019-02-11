@@ -13,6 +13,7 @@ namespace PingPongProject
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //Setting application startup route
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

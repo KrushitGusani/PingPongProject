@@ -19,6 +19,9 @@ namespace PingPongProject
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            /*This will seed the data int database and will also initialize database model
+              if anything into model from code side changes after database  is created on Application Startup.
+            */
             Database.SetInitializer(new PlayerDBContextSeeder());
         }
     }

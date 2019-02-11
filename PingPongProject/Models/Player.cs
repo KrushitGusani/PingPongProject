@@ -6,6 +6,7 @@ using System.Web;
 
 namespace PingPongProject.Models
 {
+    //This is the main Player model from which database table is created using code first approach
     public class Player
     {
         [Key]

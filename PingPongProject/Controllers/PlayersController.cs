@@ -34,6 +34,8 @@ namespace PingPongProject.Controllers
             {
                 return View("Error", new ErrorViewModel { Description = "Requested Player not found." });
             }
+
+            ViewBag.PlayerName = player.FirstName + " " + player.LastName;
             return View(player);
         }
 
@@ -70,6 +72,7 @@ namespace PingPongProject.Controllers
             {
                 return View("Error", new ErrorViewModel { Description = "Cannot Edit becuase requested Player not found." });
             }
+            ViewBag.PlayerName = player.FirstName + " " + player.LastName;
             return View(player);
         }
 
@@ -99,6 +102,7 @@ namespace PingPongProject.Controllers
             {
                 return View("Error", new ErrorViewModel { Description = "Cannot Delete becuase requested Player not found." });
             }
+            ViewBag.PlayerName = player.FirstName + " " + player.LastName;
             return View(player);
         }
 

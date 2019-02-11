@@ -5,6 +5,7 @@ using System.Web;
 
 namespace PingPongProject.Models
 {
+    // This is a class which can show customized error messages using different properties
     public class ErrorViewModel
     {
         public string RequestId { get; set; }
